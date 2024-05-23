@@ -1,7 +1,7 @@
 given_string = "madam"
 
 def ispalnidromestr(given_string):
-    if given_string.casefold() == given_string[::-1].casefold():
+    if given_string == ''.join(reversed(given_string)):
         print("The given", type(given_string), "is a palindrome")
     else:
         print("Try a different string")
